@@ -1,6 +1,194 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "adineue PRO Cyr Light Web";
+  src: url("../font/adineuePROCyr-LightWeb.eot");
+  src: url("../font/adineuePROCyr-LightWeb.eot?#iefix") format("embedded-opentype"), url("../font/adineuePROCyr-LightWeb.woff") format("woff"), url("../font/adineuePROCyr-LightWeb.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "adineue PRO Cyr Bold Web";
+  src: url("../font/adineuePROCyr-BoldWeb.eot");
+  src: url("../font/adineuePROCyr-BoldWeb.eot?#iefix") format("embedded-opentype"), url("../font/adineuePROCyr-BoldWeb.woff") format("woff"), url("../font/adineuePROCyr-BoldWeb.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1320px;
+}
+
+.title {
+  color: #25282d;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.8px;
+  line-height: normal;
+  text-align: center;
+  font-family: "adineue PRO Cyr Bold Web";
+}
+
+.cards .cards__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cards .cards__row .item-cart {
+  box-shadow: 5px 8px 15px rgba(53, 74, 92, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+  max-width: 410px;
+  padding: 0 48px 44px 48px;
+  margin-bottom: 70px;
+}
+.cards .cards__row .item-cart .item-card__image img {
+  display: block;
+  margin: 0 auto;
+  margin-top: -32px;
+}
+.cards .cards__row .item-cart .item-cart__title {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: 0.75px;
+  line-height: normal;
+  padding-top: 29px;
+  font-family: "adineue PRO Cyr Bold Web";
+}
+.cards .cards__row .item-cart .item-cart__subtitle {
+  color: #0964ff;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.63px;
+  line-height: normal;
+  padding-top: 22px;
+  text-align: center;
+  font-family: "adineue PRO Cyr Bold Web";
+}
+.cards .cards__row .item-cart .item-cart__txt {
+  color: #25282d;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 25px;
+  font-family: "adineue PRO Cyr Light Web";
+}
+.cards .cards__row .item-cart .item-cart__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+.cards .cards__row .item-cart .item-cart__btn a {
+  color: #0964ff;
+  display: block;
+  font-family: "adineue PRO Cyr Light Web";
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.37px;
+  line-height: normal;
+  border-radius: 28px;
+  border: 2px solid #0964ff;
+  padding: 14px 37px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.cards .cards__row .item-cart .item-cart__btn a:hover {
+  background-image: linear-gradient(48deg, #53a3ff 0%, #005cff 100%);
+  color: white;
+  transition: 0.3s;
+  border: 2px solid white;
+}
+
+.service {
+  margin-top: 130px;
+  margin-bottom: 110px;
+}
+.service .service__title {
+  padding-bottom: 115px;
+}
+
+.leading-painting {
+  padding-top: 105px;
+  padding-bottom: 70px;
+  background-color: #fafafa;
+  background-image: url("../image/bg1.png");
+  background-position: -58% 2%;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+.leading-painting .leading-painting__title {
+  padding-bottom: 115px;
+}
+
+.reviews {
+  padding: 110px 0;
+  background-color: #fafafa;
+  background-image: url("../image/bgwhite.png");
+  background-position: 158% 2%;
+  background-repeat: no-repeat;
+}
+.reviews .reviews__title {
+  padding-bottom: 55px;
+}
+.reviews .reviews__carosel-wrapper {
+  margin: 0 auto;
+  max-width: 1475px;
+  display: flex;
+  align-items: center;
+}
+.reviews .reviews__carosel-wrapper .arr:hover {
+  cursor: pointer;
+}
+.reviews .reviews__carosel-wrapper .arr_prev {
+  margin-right: 20px;
+  transform: rotate(180deg);
+}
+.reviews .reviews__carosel-wrapper .arr_prev {
+  margin-left: 20px;
+}
+.reviews .reviews__carosel-wrapper .reviews__carosel-box .reviews__item {
+  max-width: 410px;
+  padding: 33px 49px 42px 49px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.reviews .reviews__carosel-wrapper .reviews__carosel-box .reviews__item .item__icon {
+  margin: 0 auto;
+  display: block;
+}
+.reviews .reviews__carosel-wrapper .reviews__carosel-box .reviews__item .item__name {
+  color: #000000;
+  font-family: "adineue PRO Cyr Bold Web";
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  padding: 22px 0;
+  font-style: normal;
+  letter-spacing: 0.66px;
+  line-height: normal;
+}
+.reviews .reviews__carosel-wrapper .reviews__carosel-box .reviews__item .item__txt {
+  font-family: "adineue PRO Cyr Light Web";
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: 0.51px;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
